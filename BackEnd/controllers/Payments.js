@@ -127,7 +127,7 @@ const enrollStudents = async(courses, userId, res) => {
             
         ///bachhe ko mail send kardo
         const emailResponse = await mailSender(
-            enrollStudents.email,
+            enrolledStudent.email,
             `Successfully Enrolled into ${enrolledCourse.courseName}`,
             courseEnrollmentEmail(enrolledCourse.courseName, `${enrolledStudent.firstName}`)
         )    
