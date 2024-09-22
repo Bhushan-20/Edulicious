@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import logo from "../../assets/Logo/Logo-Full-Light.png"
+import logo from "../../assets/Logo/Logo.png"
 import { Link, matchPath,useNavigate } from 'react-router-dom'
 import {NavbarLinks} from "../../data/navbar-links"
 import { useLocation } from 'react-router-dom'

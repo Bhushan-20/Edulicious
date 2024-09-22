@@ -17,7 +17,7 @@ const InstructorSection = () => {
 				</div>
 				<div className='font-medium text-[16px] text-justify w-[90%] text-richblack-300'>
 					Instructors from around the world teach millions of students on
-					StudyNotion. We provide the tools and skills to teach what you love.
+					Edulicious. We provide the tools and skills to teach what you love.
 				</div>
 				<div className='w-fit ml-20 md:ml-0'>
 					<CTAButton active={true} linkto={"/signup"}>

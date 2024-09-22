@@ -159,7 +159,7 @@ const Home = () => {
 
                         <div className='flex flex-col items-start gap-10 lg:w-[40%]'>
                             <div className='text-[16px]'>
-                                The modern StudyNotion dictates its own terms. Today, to be competitive specialist requires more than professional skills.
+                                The modern Edulicious dictates its own terms. Today, to be competitive specialist requires more than professional skills.
                             </div>
                             <div className='lg:w-[30%]'> <CTAButton active={true} linkto={"/signup"}>Learn More</CTAButton></div>
                         </div>
