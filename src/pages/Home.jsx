@@ -11,47 +11,41 @@ import ExploreMore from '../components/core/HomePage/ExploreMore'
 import Footer from '../components/common/Footer'
 import Banner from '../assets/Images/banner.mp4'
 import ReviewSlider from '../components/common/ReviewSlider'
-import '../App.css'
 // import Office from '../assets/Images/boxoffice.png'
 
 const Home = () => {
-    
   return (
     <div>
-        <div>
-            <div className='main'>
-                <video muted loop autoPlay><source src={Banner} type='video/mp4'/></video>
-            </div>
-            <div className="absolute content z-10 mx-auto flex flex-col items-center justify-center text-white">
-                <Link to={"/signup"}>
-                    <div className="group mt-16 p-1 mx-auto rounded-full text-richblack-200 bg-richblack-800 font-bold transition-all duration-200 hover:scale-95 w-fit">
-                        <div className="flex items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900">
-                            <p>Become an Instructor</p>
-                            <FaArrowRight />
-                        </div>
-                    </div>
-                </Link>
-
-                <div className="text-center text-4xl font-semibold mt-7">
-                    Empower Your Future with
-                    <HighlightText text={"Coding Skills"} />
-                </div>
-
-                <div className="mt-4 w-[55%] text-center text-lg font-bold text-yellow-5">
-                    With our online coding courses, you can learn at your own pace, from anywhere in the world, and get access to a
-                    wealth of resources, including hands-on projects, quizzes, and personalized feedback from instructors.
-                </div>
-
-                <div className="flex gap-7 mt-8">
-                    <CTAButton active={true} linkto={"/signup"}>Learn More</CTAButton>
-                    <CTAButton active={false} linkto={"/signup"}>Book a Demo</CTAButton>
-                </div>
-            </div>
-
-        </div>
-        
         {/*Section - 1 */}
         <div className='relative mx-auto flex flex-col w-11/12 max-w-maxContent items-center text-white justify-between'>
+            <Link to={"/signup"}>
+                <div className='group mt-16 p-1 mx-auto rounded-full text-richblack-200 bg-richblack-800 font-bold transition-all duration-200 hover:scale-95 w-fit'>
+                    <div className='flex items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900'>
+                        <p>Become an Instructor</p>
+                        <FaArrowRight/>
+                    </div>
+                </div>
+            </Link>
+
+            <div className='text-center text-4xl font-semibold mt-7'>
+                Empower Your Future with
+                <HighlightText text={"Coding Skills"} />
+            </div>
+
+            <div className='mt-4 w-[90%] text-center text-lg font-bold text-richblack-300'>
+                With our online coding courses,you can lear at your own pace,from anywhere in the world, and get access to a <br/>
+                wealth of resources, including hands-on projects, quizzes, and personalized feedback from instructors.
+            </div>
+
+            <div className='flex gap-7 mt-8'>
+                <CTAButton active={true} linkto={"/signup"}>Learn More</CTAButton>
+                <CTAButton active={false} linkto={"/signup"}>Book a Demo</CTAButton>
+            </div>
+
+            <div className='mx-3 my-12 shadow-blue-200 w-[80%] drop-shadow-lg'>
+                <video muted loop autoPlay className="shadow-[20px_20px_rgba(255,255,255)]"><source src={Banner} type='video/mp4'/></video>
+            </div>
+
             {/* Code Section - 1 */}
             <div>
                 <CodeBlocks
